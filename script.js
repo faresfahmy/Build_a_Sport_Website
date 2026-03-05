@@ -86,7 +86,7 @@ let createTeam = (team)=>{
               let divBox = document.createElement("div");
               divBox.classList.add("box");
               divBox.innerHTML = `
-               <img src=${p.player_image==''?'images/149211_d-coppola.jpg':p.player_image} onerror="this.onerror=null; this.src='images/149211_d-coppola.jpg';">
+               <img src=${p.player_image==''?'149211_d-coppola.jpg':p.player_image} onerror="this.onerror=null; this.src='149211_d-coppola.jpg';">
                   <div class="info-player">
                       <h1 class="name-player">${p.player_name}</h1>
                       <div class="info-add">
