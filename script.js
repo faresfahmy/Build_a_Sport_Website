@@ -16,7 +16,7 @@ btnSearch.addEventListener("click",(e)=>{
     if(Number.isInteger(Number.parseInt(boxSearch.value))){
         boxSearch.style.border= "#00b618 solid 1px";
         checkInternetConnection().then(online=>{
-            if(online===true){
+            if(online){
                 fetchDataTeams(boxSearch.value);//Function Fetch Data
                 mainElementInformationTeam.innerHTML =`<h3 class="heading-Searching">Searching ...</h3>`;
                  mainElementInformationTeam.style.color = "#00b618";
